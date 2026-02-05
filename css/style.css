@@ -1,0 +1,37 @@
+/* is your multi line comment /*
+/* variable examples */
+:root{
+    --content-background-color: rgba(255,255,255,0.75);
+}
+
+body{
+    background-color: cornflowerblue;
+}
+header{
+    /* background-color: rgba(255,255,255,.75);  */
+    background-color: var(--content-background-color);
+}
+
+main{
+    /* background-color: rgba(255,255,255,.75); */
+       background-color: var(--content-background-color);
+}   
+
+footer{
+    /* background-color: rgba(255,255,255,.75); */
+       background-color: var(--content-background-color);
+
+h1{
+    /* background-color: #333333; */
+    color: #777777
+    text-align: center; 
+    text-decoration: underline; 
+}
+/* adding a coma adds the property to the tag*/ 
+h2, h3{
+     font-family: cursive; /* serif, sans-serif, cursive, monospace  */
+}
+
+h2{
+    color: green; 
+}
