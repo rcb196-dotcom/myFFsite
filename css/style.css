@@ -5,19 +5,44 @@
 }
 
 body{
-    background-color:rgb(48, 120, 96)
+    background-color:rgb(48, 120, 96);
 }
 header{
     /* background-color: rgba(255,255,255,.75);  */
     background-color: var(--content-background-color);
+    text-align: center;
 }
 
 /* this is how to apply something to a p-tag within something else  */
-header > p{
-    text-align: center; 
+header > p{ 
     font-family: sans-seriif;
 }
+nav {
 
+}
+
+nav > ul{ 
+    width: 600px; 
+    margin: 0 auto; 
+    display: grid; 
+    grid-template-rows: auto; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px; 
+}
+
+nav > ul > li{ 
+    padding: 30px; 
+    list-style: none;
+    /* background-color: rgba(34, 97, 65, 0.254); */
+}
+
+nav > ul > li > a{ 
+
+}
+
+nav > ul > li > a:hover{
+    background-color: green; 
+}
 main{
     /* background-color: rgba(255,255,255,.75); */
        background-color: var(--content-background-color);
@@ -31,8 +56,8 @@ footer{
 h1{
     /* background-color: #333333;  */
     color: #eece2d;
-    text-align: center; 
     text-decoration: underline; 
+    text-align: center;
 }
 /* adding a coma adds the property to the tag*/ 
 h2, h3{

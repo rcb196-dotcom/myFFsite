@@ -2,30 +2,100 @@
 /* variable examples */
 :root{
     --content-background-color: rgba(255,255,255,0.75);
+    --pagewidth: 960px; 
 }
 
+/* reset soome default browser styles */
+* { 
+    margin: 0; 
+    padding: 0; 
+
+}
 body{
     background-color: cornflowerblue;
 }
 header{
     /* background-color: rgba(255,255,255,.75);  */
     background-color: var(--content-background-color);
+    width: var(--pagewidth);  
+    /* width: 960px */
+    padding: 20px; 
+    /* add 20 px of padding  */
+    border-width: 5px;
+    border-style: solid;
+    border-color: blue; 
+    margin-top: -7px; 
+    margin-bottom: 0px;
+    margin-left: auto; 
+    margin-right: auto;
 }
 
 /* this is how to apply something to a p-tag within something else  */
 header > p{
     text-align: center; 
-    font-family: sans-seriif;
+    font-family: sans-serif; 
+    /* display: inline-block */
 }
 
+nav > ul { 
+
+}
+
+nav > ul {
+    width: 600px; 
+    height: 200px; 
+    margin: 0 auto; 
+    display: grid; 
+    grid-template-rows: auto; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px; 
+    justify-content: center;
+    justify-items: center;
+    align-content: end; 
+    align-items: center; 
+}
+
+nav > ul > li{ 
+    padding: 30px; 
+    list-style: none;
+    background-color: aquamarine;
+}
+
+nav > ul > li > a{ 
+    color: black; 
+    font-size: 20px; 
+    background-color: aquamarine; 
+    padding: 30px; 
+    font-family: serif; 
+    /* remove underline when navigating */
+    text-decoration: none 
+}
+
+nav > ul > li > a:hover{
+    background-color: green; 
+}
 main{
     /* background-color: rgba(255,255,255,.75); */
        background-color: var(--content-background-color);
+       padding-top: 20px; 
+       padding-right: 40px;
+       padding-bottom: 20px;
+       padding-left: 40px;
+       border-top-width: 20px;
+       border-top-style: wavy;
+       border-top-color: white;
+       margin: 0px auto; 
+       /* margin: tp/bottom left/right  */
 }   
 
 footer{
     /* background-color: rgba(255,255,255,.75); */
        background-color: var(--content-background-color);
+       width: var(--pagewidth);
+       border: 10px solid green; 
+       padding: 20px; 
+       margin: 0 auto; 
+       /* make everything centered */
 }
 
 h1{
