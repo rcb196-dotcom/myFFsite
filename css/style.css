@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 /* is your multi line comment /*
 /* variable examples */
 :root{
@@ -37,7 +38,12 @@ nav > ul > li{
 }
 
 nav > ul > li > a{ 
-
+    color: black; 
+    font-size: 20px; 
+    background-color: rgb(249, 223, 51); 
+    font-family: serif; 
+    /* remove underline when navigating */
+    text-decoration: none 
 }
 
 nav > ul > li > a:hover{
@@ -46,6 +52,7 @@ nav > ul > li > a:hover{
 main{
     /* background-color: rgba(255,255,255,.75); */
        background-color: var(--content-background-color);
+       text-align: center;
 }   
 
 footer{
@@ -58,6 +65,9 @@ h1{
     color: #eece2d;
     text-decoration: underline; 
     text-align: center;
+    font-family: 'Playfair Display', serif; 
+    font-weight: 800;
+    font-style: italic;
 }
 /* adding a coma adds the property to the tag*/ 
 h2, h3{
@@ -66,4 +76,11 @@ h2, h3{
 
 h2{
     color: green; 
+}
+
+.charactergrid{
+    display: grid;
+    grid-template-rows: auto; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px; 
 }

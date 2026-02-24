@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 /* is your multi line comment /*
 /* variable examples */
 :root{
@@ -100,9 +101,12 @@ footer{
 
 h1{
     /* background-color: #333333;  */
-    color: #777777
+    color: #777777;
     text-align: center; 
     text-decoration: underline; 
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 100; 
+    font-style: italic; 
 }
 /* adding a coma adds the property to the tag*/ 
 h2, h3{
@@ -120,7 +124,7 @@ h2{
     gap: 20px; 
 }
 
-.gris2{ 
+.grid2{ 
     display: grid; 
     grid-template-rows: auto; 
     grid-template-columns: 2fr 1fr 1fr; 
