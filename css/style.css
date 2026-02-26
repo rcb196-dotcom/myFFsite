@@ -2,7 +2,7 @@
 /* is your multi line comment /*
 /* variable examples */
 :root{
-    --content-background-color: rgba(255,255,255,0.25);
+    --content-background-color: rgba(250, 240, 125, 0.909);
 }
 
 body{
@@ -10,40 +10,49 @@ body{
 }
 header{
     /* background-color: rgba(255,255,255,.75);  */
-    background-color: var(--content-background-color);
+    background-color: rgba(4, 117, 38, 0.946);
     text-align: center;
 }
 
-/* this is how to apply something to a p-tag within something else  */
-header > p{ 
-    font-family: sans-seriif;
+header p{ 
+    color:#eece2d; 
 }
-nav {
+.cover > img{ 
+    width: 50%; 
+    height: 700px; 
+    border-radius: 15px;
+}
+.special-text {
+    font-size: 30px;
+}
 
+nav {
+    background-color: rgba(248, 244, 111, 0.946);
 }
 
 nav > ul{ 
-    width: 600px; 
+    width: 800px; 
     margin: 0 auto; 
     display: grid; 
     grid-template-rows: auto; 
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px; 
 }
 
 nav > ul > li{ 
     padding: 30px; 
     list-style: none;
-    /* background-color: rgba(34, 97, 65, 0.254); */
+    /*\ background-color: rgba(34, 97, 65, 0.254); */
 }
 
 nav > ul > li > a{ 
     color: black; 
     font-size: 20px; 
-    background-color: rgb(249, 223, 51); 
     font-family: serif; 
     /* remove underline when navigating */
-    text-decoration: none 
+    text-decoration: none;
+    display: inline-block; 
+    padding: 10px 15px; 
 }
 
 nav > ul > li > a:hover{
@@ -83,4 +92,33 @@ h2{
     grid-template-rows: auto; 
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px; 
+}
+
+.charactergrid img{ 
+    box-shadow: 5px 5px 15px rgb(245, 237, 9); 
+     transition: 0.3s;
+}
+
+.charactergrid img:hover{ 
+    transform: scale(1.05);
+} 
+
+.wildlifeinspo{ 
+    display: grid;
+    grid-template-rows: auto auto; 
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; 
+}
+.wildlifeinspo img{ 
+    width: 100%; 
+    height: 400px; 
+}
+ 
+.junglepics{ 
+    text-align: center;
+} 
+
+.junglepics img{ 
+    width: 500px; 
+    height: 400px; 
 }
