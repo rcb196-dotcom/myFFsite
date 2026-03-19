@@ -13,6 +13,16 @@ for(let i = 0;i<10;i++){
     console.log(i);
 }
     */ 
+
+function nextImage(){
+    galleryClass[currentImage].style.display = "none"; 
+    currentImage = currentImage + 1; 
+    if(currentImage == galleryClass.length){
+        currentImage = 0; 
+    }
+    galleryClass[currentImage].style.display = "block"; 
+
+}
 /* this does the same thing as lines 8-10: */ 
 for(let i = 0; i<galleryClass.length;i++){
     galleryClass[i].style.display = "none"; 
@@ -25,14 +35,16 @@ galleryClass[currentImage].style.display = "block";
 let nextButton = document.getElementById("next");
 
 nextButton.addEventListener("click", function(){
-    galleryClass[currentImage].style.display = "none"; 
-    currentImage = currentImage + 1; 
-    if(currentImage == galleryClass.length){
-        currentImage = 0; 
-    }
-    galleryClass[currentImage].style.display = "block"; 
+    // galleryClass[currentImage].style.display = "none"; 
+    // currentImage = currentImage + 1; 
+    // if(currentImage == galleryClass.length){
+    //     currentImage = 0; 
+    // }
+    // galleryClass[currentImage].style.display = "block"; 
+    nextImage();
 
 }); 
+nextButton.addEventListener("click", nextImage);
 
 let prevButton = document.getElementById("previous");
 
@@ -55,6 +67,13 @@ startButton.addEventListener("click", function(){
         autoCycleActive = true; 
         cycleInterval = setInterval(function(){
             console.log("interval started")
+            nextImage();
         },3000);
     }
 }); 
+
+let stopButton = document.getElementById("stop");
+stopButton.addEventListener("click", function(){
+    clearInterval(cycleInterval);
+    autoCycleActive = false;
+});
