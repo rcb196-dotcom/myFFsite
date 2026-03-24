@@ -65,4 +65,4 @@ function increaseScore(){
 function decreaseScore(){
     score--;
     result.innerHTML = "Correct Score: " + score;
-}
+} 
