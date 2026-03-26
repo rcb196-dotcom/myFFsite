@@ -127,3 +127,61 @@ h2{
     text-decoration: underline;
     color:black; 
 }
+
+/* javascript stuff */
+
+/* soft glow */
+.glow {
+    box-shadow: 0 0 20px #eece2d;
+    transition: 0.3s;
+}
+
+/* character traits */
+.trait {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* sunset mode */
+.sunset {
+    background-image: url("../images/sunsetriver.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+/* fact button  */
+.fact-button {
+    background-color: #eece2d;
+    color: #333;
+    border: none;
+    padding: 12px 18px;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.fact-button:hover {
+    background-color: #d4b91f;
+    transform: scale(1.05);
+}
+
+#factBtn {
+    display: block;
+    margin: 30px auto;
+}
+
+/* sunset mode instructions  */
+.hint-text {
+    text-align: center;
+    font-style: italic;
+    color: #fff8dc;
+    background-color: rgba(34, 97, 65, 0.7);
+    padding: 8px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 10px auto;
+    font-size: 16px;
+}

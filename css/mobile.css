@@ -52,3 +52,14 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+.hint-text {
+    text-align: center;
+    font-style: italic;
+    color: #fff8dc;  /* soft cream color */
+    background-color: rgba(0,0,0,0.3); /* semi-transparent overlay */
+    padding: 8px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 10px auto;
+}
