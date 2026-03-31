@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css" media="only screen and (min-width:960px)">
+    <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 480px)">
+
+    <title>Attachment</title>
+</head>
+<body>
+    <h1>Attachment Issues</h1>
+    <h2>read the following phrases, then click on the button that is most true to you to find out your attachment style</h2>
+        <section class="attachment-section grid">
+            
+            <!-- grid (phrases) -->
+            <div class="attachment-group">
+                <div class="phrase pink">Why don’t they love me?</div>
+                <div class="phrase purple">Why do they love me?</div>
+            </div>
+
+            <div class="attachment-group">
+                <div class="phrase pink">I need constant reassurance</div>
+                <div class="phrase purple">I prefer independence</div>
+            </div>
+
+            <div class="attachment-group">
+                <div class="phrase pink">I overthink everything</div>
+                <div class="phrase purple">I avoid getting too close</div>
+            </div>
+
+            <!-- button choices -->
+            <div class="button-group">
+                <button onclick="showAnxious()">I relate more to pink</button>
+                <button onclick="showAvoidant()">I relate more to purple</button>
+                <button onclick="showMixed()">A mix of both</button>
+                <button onclick="showNeutral()">Neither</button>
+            </div>
+
+            <!-- result -->
+            <p id="result" class="result-display"></p>
+            <img id="resultImage" src="images/placeholder.jpg" alt="attachment style meme" class="result-img">
+        </section>
+
+    <h3>Go <a href="index.html">home</a></h3>
+            <script src="JavaScript/script.js"></script></body>
+</html>

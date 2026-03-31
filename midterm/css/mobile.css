@@ -1,0 +1,53 @@
+@import "style.css";
+
+/* header */
+header {
+    width: 100%;
+    text-align: center;
+}
+
+/* nav bar */
+nav {
+    margin-top: 20px;
+}
+
+nav > ul {
+    width: 100%;
+    height: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr; /* stack nav items */
+    padding: 0;
+    margin: 0;
+}
+
+nav > ul > li {
+    padding: 15px 0;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+}
+
+
+/* pics */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.overthinking-section {
+    grid-template-columns: 1fr; /* stack thought blocks */
+}
+
+.flags-section {
+    grid-template-columns: 1fr; /* stack flags */
+}
+
+.attachment-group {
+    grid-template-columns: 1fr; /* stack pink/purple instead of side-by-side */
+}
+
+.healing-section {
+    grid-template-columns: 1fr; /* stack content */
+} 
