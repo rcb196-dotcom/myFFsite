@@ -54,25 +54,24 @@ nav > ul > li{
 }
 
 nav > ul > li > a{ 
-    color: #fff8dc; 
+    color: #fcf0bf; 
     font-size: 20px; 
     font-family: serif; 
-    /* remove underline when navigating */
+    /* remove underline when navigating and bullet points i think */
     text-decoration: none;
     display: inline-block; 
     padding: 10px 15px; 
 }
 
 .nav-list li a:hover {
-    color: #c94c4c; /* soft red accent on hover */
+    color: #c94c4c; 
 }
 
 /* home intro  */
 .home-intro {
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.15); 
+    background-color: rgba(156, 8, 30, 0.81); 
     padding: 25px 20px;
-    margin: 20px auto;
     max-width: 100%;
 }
 
@@ -102,6 +101,15 @@ nav > ul > li > a{
     object-fit: cover;
 }
 
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: rgba(119, 5, 43, 0.167); 
+    color: #ffe8a9;
+    font-style: italic;
+    margin-top: 40px;
+}
+
 /* styling overthinking page cards */
 .thought-block {
     border: 1px solid #ccc;
@@ -125,16 +133,16 @@ button {
 /* red flags */
 .flags-section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 30px;
     margin: 40px auto;
     width: 90%;
     border-radius: 15px;
 
-    /* sheer overlay effect */
-    background-color: rgba(255, 255, 255, 0.3); /* white with 30% opacity */
-    backdrop-filter: blur(4px); /* optional: soft blur behind the sheer */
+/* background so colors show ip */
+    background-color: rgba(255, 255, 255, 0.3); 
+}
 
 .flag-block {
     border: 1px solid #ccc;
@@ -143,57 +151,27 @@ button {
     border-radius: 10px;
 }
 
-.green-flag {
-    background-color: #d4edda; 
+.green-flag, 
+.green-flag2, 
+.green-flag3 {
+    background-color: #0ab733; 
     border-left: 5px solid #28a745; 
     padding: 10px;
     border-radius: 5px;
 }
 
-.green-flag2 {
-    background-color: #d4edda; 
-    border-left: 5px solid #28a745;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.green-flag3 {
-    background-color: #d4edda;
-    border-left: 5px solid #28a745;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.yellow-flag {
-    background-color: #fff3cd; 
-    border-left: 5px solid #ffc107;
-    padding: 10px;
-    border-radius: 5px;
-}
-
+.yellow-flag, 
 .yellow-flag2 {
-    background-color: #fff3cd; 
+    background-color: #f9e298; 
     border-left: 5px solid #ffc107;
     padding: 10px;
     border-radius: 5px;
 }
 
-.red-flag {
-    background-color: #f8d7da; 
-    border-left: 5px solid #dc3545;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.red-flag2 {
-    background-color: #f8d7da; 
-    border-left: 5px solid #dc3545;
-    padding: 10px;
-    border-radius: 5px;
-}
-
+.red-flag, 
+.red-flag2,
 .red-flag3 {
-    background-color: #f8d7da; 
+    background-color: #f92032; 
     border-left: 5px solid #dc3545;
     padding: 10px;
     border-radius: 5px;
@@ -272,7 +250,6 @@ body {
     padding: 15px;
     border-radius: 10px;
     border: 1px solid #ccc;
-    background-color: #f586d400;
     width: 300px;
 }
 

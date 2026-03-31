@@ -82,11 +82,15 @@ function showNeutral() {
 
 // healing 
 const affirmations = [
-    "I will not text him",
+    "I will not text them",
     "I deserve better",
     "I am focusing on myself",
     "I’m thriving, not surviving",
-    "ALWAYS. choose self love."
+    "ALWAYS. choose self love.", 
+    "My feelings are valid",
+    "I am growing every day",
+    "I trust my intuition",
+    "If they wanted to, they would"
 ];
 
 let currentIndex = 0;

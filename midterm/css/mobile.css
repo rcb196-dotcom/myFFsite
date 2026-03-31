@@ -51,3 +51,14 @@ img {
 .healing-section {
     grid-template-columns: 1fr; /* stack content */
 } 
+
+/* attachment styles page fix */
+.attachment-section .pink {
+    color: #ff6bcb; 
+    font-weight: bold;
+}
+
+.attachment-section .purple {
+    color: #9b59b6; 
+    font-weight: bold;
+}
